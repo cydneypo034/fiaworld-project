@@ -2,6 +2,15 @@ html {
   background-color: #252525;
 }
 
+#nav-toggle-state {
+  display: none;
+}
+
+#nav-toggle-state:checked ~ .nav-menu {
+  display: block;
+}
+
+
 .about-text {
   color: white;
 }
@@ -20,5 +29,4 @@ html {
 
 .about-box {
   padding: 90px;
-
 }
