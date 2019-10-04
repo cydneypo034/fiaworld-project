@@ -5,3 +5,19 @@ html {
 .about-text {
   color: white;
 }
+
+.about-text2 {
+  font-size: 46px;
+  text-shadow: 5px 5px #000000;
+  color: white;
+}
+
+.about-text-sub {
+  font-size: 30px;
+  color: white;
+}
+
+.about-box {
+  padding: 90px;
+
+}
