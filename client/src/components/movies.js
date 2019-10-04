@@ -3,7 +3,7 @@ import React from 'react';
 class Movies extends React.Component {
     render() {
         return (
-            <div>Hey</div>
+            <div className="about-text">Hey</div>
         )
     }
 

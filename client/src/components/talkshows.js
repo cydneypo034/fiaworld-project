@@ -3,7 +3,7 @@ import React from 'react';
 class TalkShows extends React.Component {
     render() {
         return (
-            <div>Wassup</div>
+            <div className="about-text">Wassup</div>
         )
     }
 
