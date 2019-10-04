@@ -14,6 +14,7 @@ html {
 
 .about-text-sub {
   font-size: 30px;
+  text-shadow: 5px 5px #000000;
   color: white;
 }
 
