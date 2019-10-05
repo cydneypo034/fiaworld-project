@@ -1,9 +1,15 @@
 import React from 'react';
+import YoutubeVid from './youtube';
 
 class Home extends React.Component {
     render() {
         return (
-            <div className="about-text">Hi</div>
+            <div>
+            <div className="about-text2">Fiaworld Productions</div>
+            <YoutubeVid />
+            
+
+            </div>
         )
     }
 
