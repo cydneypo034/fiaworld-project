@@ -23,9 +23,23 @@ class NavigationBar extends React.Component {
 
             <div id="navbarBasicExample" className="navbar-menu">
               <div className="navbar-start">
+
+
+              <div className="navbar-item has-dropdown is-hoverable">
+                  <a className="navbar-link">
+                    About
+                  </a>
+
+                <div className="navbar-dropdown">
                 <a className="navbar-item" href="/about" >
-                  About
+                  About FIA Corporation
                 </a>
+
+                <a className="navbar-item" href="/aboutprod" >
+                  Meet The Producer
+                </a>
+                </div>
+                </div>
 
                 <a className="navbar-item" href="/createartist">
                   Create Artist

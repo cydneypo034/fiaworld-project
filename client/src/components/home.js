@@ -14,7 +14,7 @@ class Home extends React.Component {
             <div className="hero-body">
                 <div className="container">
                 <h1 className="home-text2">
-                    FIA CORPORATION
+                    FIA Corporation
                 </h1>
                 <h2 className="subtitle">
                     FIA Corporation has been serving the 
@@ -31,7 +31,7 @@ class Home extends React.Component {
             <section>
             <div className="card-wrapper">
                 <div className="card">
-                    <img src={stephanie} alt="stephanie"/>
+                    <img src={stephanie} alt="stephanie" className="artist-image"/>
                     <h3 className="about-text2">Stephanie Bookman</h3>
                     <p className="para-center">Stephanie Bookman is an excellent songstress. She provides a musical experience that is spirit 
                     filled while her vocal quality is only surpassed by love for priase. A soft heart with the hope and faith of Hannah.</p>
@@ -41,7 +41,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="card">
-                <img src={chynah} alt="chynah" />
+                <img src={chynah} alt="chynah" className="artist-image2"/>
                     <h3 className="about-text2">Chynah Mari</h3>
                     <p className="para-center">Chynah Mari is truly one of a kind. Her writing skilz are ahead of the rap game 
                     and include her deeply profound spiritual enlightenment. High energy, a well known model, and spiritually in touch. </p>
@@ -52,10 +52,9 @@ class Home extends React.Component {
                 </div>
 
                 <div className="card">
-                <img src={jasmine} alt="jasmine" />
+                <img src={jasmine} alt="jasmine" className="artist-image3"/>
                     <h3 className="about-text2">Jasmine Seabron</h3>
-                    <p className="para-center">Jasmine Seabron is a very talented gospel music singer. Originally from Atlanta, she has spent 
-                    the majority of her young career singing live. Her renditions of contemporary gospel standards are heart moving and although she is physically blind, 
+                    <p className="para-center">Jasmine Seabron is a very talented gospel music singer. Her renditions of contemporary gospel standards are heart moving and although she is physically blind, 
                     her spiritual sight is unmistakable.   </p>
                     <br></br>
                     <a href="https://www.youtube.com/watch?v=OX5w-pqJnUE&feature=youtu.be">Video Available Here</a>

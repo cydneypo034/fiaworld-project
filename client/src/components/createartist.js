@@ -1,4 +1,5 @@
 import React from 'react';
+import ampli from './imagecomp/amplipher.jpg'
 
 class CreateArtist extends React.Component {
 
@@ -28,6 +29,18 @@ class CreateArtist extends React.Component {
 
     render() {
         return (
+            <div>
+                <img src={ampli} alt="ampli" className="dj-photo" />
+                <section className="hero is-light is-small">
+            <div className="hero-body">
+                <div className="container">
+                <h1 className="home-text2">
+                    Enter a New Artist
+                </h1>
+                
+                </div>
+            </div>
+            </section>
                 <div className="contact-fields">
                 <div className="field">
                 <label className="label">Your Name</label>
@@ -46,12 +59,21 @@ class CreateArtist extends React.Component {
                 </div>
                 </div>
 
+                <div >
+                    <label className="label">Choose File</label>
+                    <div>
+                        <input className="file is-large" type="file" placeholder="Choose file" ></input>
+                    </div>
+                </div>
+                <br />
 
                 <div className="control">
                 <button className="button is-dark">Submit</button>
                 </div>
              
                         </div>
+                        </div>
+
         )
     }
 }

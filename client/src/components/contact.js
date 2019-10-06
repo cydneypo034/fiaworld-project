@@ -1,10 +1,15 @@
 import React from 'react';
+import djmix from './imagecomp/dj-mixer.jpg';
 
 class Contact extends React.Component {
     render() {
         return (
-
-<div className="contact-fields">
+            <div>
+            
+                <img src={djmix} alt="djmix" className="dj-photo" />
+               
+        <div className="contact-fields">
+            <h3 className="home-text2">Contact Us</h3>
                 <div className="field">
                 <label className="label">Your Name</label>
                 <div className="control has-icons-left">
@@ -44,6 +49,7 @@ class Contact extends React.Component {
                 <div className="control">
                 <button className="button is-dark">Submit</button>
                 </div>
+            </div>
             </div>
         )
     }
