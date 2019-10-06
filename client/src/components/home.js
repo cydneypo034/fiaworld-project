@@ -5,9 +5,9 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-            <div className="about-text2">Fiaworld Productions</div>
+            <div className="home-text2">FIA Corporation</div>
             <YoutubeVid />
-            
+
 
             </div>
         )

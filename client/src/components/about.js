@@ -1,10 +1,11 @@
 import React from 'react';
+import FiaGospel from './imagecomp/fiagospelimage.jpg'
 
 class About extends React.Component {
     render() {
         return (
             <div>
-                
+                <img src={FiaGospel} alt="gospel image with treble note and dove" className="about-gospelpic" />
                 <div className="about-box">
                 <h1 className="about-text2">FIA Corporation: Serving Atlanta with Great Entertainment</h1>
                 <p className="about-text">FIA Corporation has been serving the 

@@ -9,6 +9,7 @@ import movies from './components/movies.js';
 import talkshows from './components/talkshows.js';
 import contact from './components/contact';
 import NavigationBar from './components/navigationbar.js';
+import Footer from './components/footer'
 
 class App extends React.Component {
   render() {
@@ -25,6 +26,7 @@ class App extends React.Component {
             <Route path="/talkshows" component={talkshows} />
             <Route path="/contact" component={contact} />
           </Switch>
+          <Footer />
         </Router>
       </React.Fragment>
     );

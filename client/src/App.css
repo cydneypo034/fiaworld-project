@@ -1,32 +1,68 @@
-html {
-  background-color: #252525;
+
+body{
+  background-image: url('./components/imagecomp/stars.gif');
+  background-size: cover;
+  
+  
+  
+  height: 100vh;
+  padding:0;
+  margin:0;
 }
 
-#nav-toggle-state {
-  display: none;
+.footer-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-shadow: 5px 5px #000000;
+  color: white;
 }
 
-#nav-toggle-state:checked ~ .nav-menu {
+.home-text2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 116px;
+  text-shadow: 5px 5px #000000;
+  color: white;
+  text-align: center;
+}
+
+.youtube-vid {
+  width: 3390px;
+  height: 690px;
   display: block;
+  margin: auto;
 }
-
 
 .about-text {
+  font-family: 'Open Sans', sans-serif;
   color: white;
 }
 
 .about-text2 {
+  font-family: 'Fjalla One', sans-serif;
   font-size: 46px;
   text-shadow: 5px 5px #000000;
   color: white;
 }
 
 .about-text-sub {
-  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
   text-shadow: 5px 5px #000000;
   color: white;
 }
 
 .about-box {
   padding: 90px;
+}
+
+.about-gospelpic {
+  float: left;
+  height: 830px;
+  width: 630px;
+  padding: 80px;
+}
+
+
+.footer {
+  background-color: #252525
 }
