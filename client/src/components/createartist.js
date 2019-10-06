@@ -28,12 +28,30 @@ class CreateArtist extends React.Component {
 
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" name="name" onChange={this.onChangeName} value={this.state.name} placeholder="Artist's name"/>
-                    <input type="submit" value="submit" />
-                </form>
-            </div>
+                <div className="contact-fields">
+                <div className="field">
+                <label className="label">Your Name</label>
+                <div className="control has-icons-left">
+                    <input className="input is-large" type="text" placeholder="Name"/>
+                    <span className="icon is-small is-left">
+                    <i className="fas fa-user"></i>
+                    </span>
+                </div>
+                </div>
+
+                <div className="field">
+                <label className="label">Biography</label>
+                <div className="control has-icons-left">
+                    <textarea className="textarea is-large" type="input" placeholder="Biography" />
+                </div>
+                </div>
+
+
+                <div className="control">
+                <button className="button is-dark">Submit</button>
+                </div>
+             
+                        </div>
         )
     }
 }

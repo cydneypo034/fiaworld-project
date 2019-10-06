@@ -52,8 +52,6 @@ class About extends React.Component {
                 favorite FIA artists.
                 </h6>
                 </div>
-
-
                 </div>
         )
     }

@@ -1,4 +1,7 @@
 import React from 'react';
+import facebook from './imagecomp/facebook.png';
+import twitter from './imagecomp/twitter.png';
+import linkedin from './imagecomp/linkedin.png';
 
 class Footer extends React.Component {
     render() {
@@ -12,8 +15,12 @@ class Footer extends React.Component {
                 can be made to webmaster@fiaworld.com <br/> © FIA Corporation
                 </p>
 
-                <p className="footer-text">
-                    
+                <p>
+                    <a href='https://www.facebook.com/FIA.Broadcast.Network?fref=ts'><img src={facebook} alt="facebook" 
+                    className="icon"/></a>
+                    <a href="https://twitter.com/fbn99"><img src={twitter} alt="twitter" className="icon"/></a>
+                    <a href="https://www.linkedin.com/in/dr-solomon-pollard-jr-33888026/"><img src={linkedin} 
+                    alt="linkedin" className="icon"/></a>
                 </p>
             </div>
             </footer>

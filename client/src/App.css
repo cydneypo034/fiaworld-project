@@ -1,13 +1,6 @@
 
 body{
-  background-image: url('./components/imagecomp/stars.gif');
-  background-size: cover;
-  
-  
-  
-  height: 100vh;
-  padding:0;
-  margin:0;
+  background-color: #000000;
 }
 
 .footer-text{
@@ -15,12 +8,19 @@ body{
   font-size: 15px;
   text-shadow: 5px 5px #000000;
   color: white;
+  float:left;
+}
+
+.icon {
+  float: right;
+  height: 45px;
+  width: 40px;
 }
 
 .home-text2 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 116px;
-  text-shadow: 5px 5px #000000;
+  text-shadow: 3px #000000;
   color: white;
   text-align: center;
 }
@@ -40,14 +40,14 @@ body{
 .about-text2 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 46px;
-  text-shadow: 5px 5px #000000;
+  text-shadow: 3px #000000;
   color: white;
 }
 
 .about-text-sub {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
-  text-shadow: 5px 5px #000000;
+  text-shadow: 1px #000000;
   color: white;
 }
 
