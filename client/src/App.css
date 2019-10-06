@@ -1,6 +1,6 @@
 
 body{
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .footer-text{
@@ -18,37 +18,42 @@ body{
 }
 
 .home-text2 {
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 116px;
+  font-family: 'Aladin', cursive;
+  font-size: 136px;
   text-shadow: 3px #000000;
-  color: white;
+  color: black;
   text-align: center;
 }
 
 .youtube-vid {
-  width: 3390px;
-  height: 690px;
+  width: 1390px;
+  height: 790px;
   display: block;
   margin: auto;
 }
-
+.para-center {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
 .about-text {
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: black;
 }
 
 .about-text2 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Aladin', cursive;
   font-size: 46px;
   text-shadow: 3px #000000;
-  color: white;
+  color: black;
 }
 
 .about-text-sub {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   text-shadow: 1px #000000;
-  color: white;
+  color: black;
 }
 
 .about-box {
@@ -66,3 +71,56 @@ body{
 .footer {
   background-color: #252525
 }
+
+img{ 
+  width: 520px;
+}
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.card {
+  width: 28rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+
+}
+
+@media screen and (min-width: 700px){
+  .card-wrapper{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .card {
+      margin: 1rem;
+  }
+
+  @keyframes fadeIn {
+      from{
+          opacity: 0;
+      }
+      to{
+          opacity: 1;
+      }
+  }
+  .card:nth-child(1){
+          animation: fadeIn .5s .5s backwards;
+      }
+  .card:nth-child(2){
+      animation: fadeIn .5s .5s backwards;
+  }
+  .card:nth-child(3){
+      animation: fadeIn .5s .5s backwards;
+  }
+}
+

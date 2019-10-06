@@ -8,8 +8,8 @@ class YoutubeVid extends React.Component {
       width: '740px',
       
       playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 0,
-        loop: 0
+        autoplay: 1,
+        loop: 1
       }
       
     };
