@@ -20,13 +20,23 @@ class Artists extends React.Component {
         })
     }
 
-    
-    
+
+
 
     render() {
+
+        var { artists } = this.state;
+
         return (
             <div>
-               <h1></h1>
+               <ul>
+                   {artists.map(artist => (
+                       <li key={artist.id}>
+                           Name: {artist.name} | Biography: {artist.biography} |
+                           <img src={artist.artist_image} alt="artist" />
+                       </li>
+                   ))}
+               </ul>
                 </div>
         )
     }
