@@ -12,8 +12,14 @@ body{
 
 .icon {
   float: right;
-  height: 45px;
-  width: 40px;
+  padding: 15px;
+  height: 75px;
+  width: 70px;
+}
+
+.navbar-item {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 
 .home-text2 {
@@ -24,12 +30,7 @@ body{
   text-align: center;
 }
 
-.youtube-vid {
-  width: 1590px;
-  height: 490px;
-  display: block;
-  margin: auto;
-}
+
 .para-center {
   font-family: 'Open Sans', sans-serif;
   color: black;

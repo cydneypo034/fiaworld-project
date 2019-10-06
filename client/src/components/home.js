@@ -1,5 +1,4 @@
 import React from 'react';
-import YoutubeVid from './youtube';
 import stephanie from './imagecomp/stephanie.png';
 import chynah from './imagecomp/chynah.png';
 import jasmine from './imagecomp/jasmine.png';
@@ -16,17 +15,17 @@ class Home extends React.Component {
                 <h1 className="home-text2">
                     FIA Corporation
                 </h1>
-                <h2 className="subtitle">
+                <h2 className="subtitle has-text-centered">
                     FIA Corporation has been serving the 
-                Atlanta community in music as well as, 
-                    video broadcasting and production since 1993. We are a Corporation that is multi-faceted by providing several
+                    Atlanta community in music as well as, 
+                    video broadcasting and production since 1993. 
+                    We are a Corporation that is multi-faceted by providing several
                     services in entertainment and media.
                 </h2>
                 </div>
             </div>
             </section>
 
-            <YoutubeVid />
 
             <section>
             <div className="card-wrapper">

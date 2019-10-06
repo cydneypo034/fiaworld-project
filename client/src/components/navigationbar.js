@@ -48,7 +48,7 @@ class NavigationBar extends React.Component {
 
                 <div className="navbar-item has-dropdown is-hoverable">
                   <a className="navbar-link">
-                    More
+                   More
                   </a>
           
                   <div className="navbar-dropdown">

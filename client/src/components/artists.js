@@ -11,21 +11,22 @@ class Artists extends React.Component {
     }
     
    
-    componentDidMount() {
+    componentDidMount = () => {
         fetch('/api/artists/')
         .then(res => res.json())
-        .then(res => {
-            this.setState({artists: res.data})
+        .then(currentArtist => {
+            console.log('here are the current artists:', currentArtist)
+            this.setState({artists: currentArtist})
         })
     }
 
-
+    
     
 
     render() {
         return (
             <div>
-               <h1>Hey</h1>
+               <h1></h1>
                 </div>
         )
     }
