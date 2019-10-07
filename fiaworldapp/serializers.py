@@ -4,15 +4,15 @@ from .models import Artists, Movies, TalkShows
 class ArtistsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Artists
-        fields = ['name', 'biography', 'artist_image']
+        fields = ['id', 'name', 'biography', 'artist_image']
 
 
 class MoviesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movies
-        fields = ['name', 'description', 'movie_image']
+        fields = ['id', 'name', 'description', 'movie_image']
 
 class TalkShowsSerializer(serializers.ModelSerializer):
     class Meta:
         model = TalkShows
-        fields = ['name', 'description', 'show_image']
+        fields = ['id', 'name', 'hosts', 'description', 'show_image']

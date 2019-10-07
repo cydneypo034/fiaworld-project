@@ -15,4 +15,6 @@ class TalkShows(models.Model):
     name        = models.CharField(max_length=30)
     description = models.CharField(max_length=100)
     show_image  = models.ImageField(upload_to="uploads/", blank=True)
+    hosts       = models.CharField(max_length=50)
+
 
