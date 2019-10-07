@@ -25,14 +25,14 @@ class Artists extends React.Component {
         var { artists } = this.state;
 
         return (
-            <div className="card">
-                <div className="content" >
+            <div>
+                <div>
                    
                    {artists.map(artist => (
                        <div key={artist.id}>
                            Name: {artist.name} 
                            | Biography: {artist.biography} 
-                           | Image: <img src={artist.artist_image} alt="artist" />
+                           | Image: <img src={`${artist.artist_image}`} />
                        </div>
                    ))}
        

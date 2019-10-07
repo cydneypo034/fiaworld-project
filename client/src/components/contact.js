@@ -1,15 +1,28 @@
 import React from 'react';
-import djmix from './imagecomp/dj-mixer.jpg';
+import facebook from './imagecomp/facebook.png';
+import twitter from './imagecomp/twitter.png';
+import linkedin from './imagecomp/linkedin.png';
 
 class Contact extends React.Component {
     render() {
         return (
             <div>
-            
-                <img src={djmix} alt="djmix" className="dj-photo" />
-               
+            <h6 className="contact-text">Contact Us |
+            <a href='https://www.facebook.com/FIA.Broadcast.Network?fref=ts'><img src={facebook} alt="facebook" 
+                    className="icon"/></a>
+                    
+                <a href="https://twitter.com/fbn99"><img src={twitter} alt="twitter" 
+                className="icon"/></a>
+                    
+                <a href="https://www.linkedin.com/in/dr-solomon-pollard-jr-33888026/"><img src={linkedin} 
+                    alt="linkedin" className="icon"/></a>
+
+              </h6>
+
+              <p className="para-center">If you are an aspiring artist, film producer needing sound production, or an
+              aspiring talk show host, feel free to contact us through the contact form below.</p>
+
         <div className="contact-fields">
-            <h3 className="home-text2">Contact Us</h3>
                 <div className="field">
                 <label className="label">Your Name</label>
                 <div className="control has-icons-left">
@@ -50,7 +63,12 @@ class Contact extends React.Component {
                 <button className="button is-dark">Submit</button>
                 </div>
             </div>
-            </div>
+
+            <br />
+
+           
+              </div>
+            
         )
     }
 

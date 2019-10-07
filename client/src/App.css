@@ -19,10 +19,9 @@ body{
 }
 
 .icon {
-  float: right;
-  padding: 15px;
-  height: 75px;
-  width: 70px;
+  padding: 10px;
+  height: 80px;
+  width: 72px;
 }
 
 .navbar-item {
@@ -37,6 +36,12 @@ body{
   text-align: center;
 }
 
+.contact-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 136px;
+  color: black;
+  text-align: center;
+}
 
 .para-center {
   font-family: 'Open Sans', sans-serif;
