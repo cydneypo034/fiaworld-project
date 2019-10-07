@@ -9,7 +9,8 @@ class Home extends React.Component {
         return (
             <div>
 
-            <section className="hero is-light is-small">
+            <section className="hero is-large has-bg-img">
+
             <div className="hero-body">
                 <div className="container">
                 <h1 className="home-text2">

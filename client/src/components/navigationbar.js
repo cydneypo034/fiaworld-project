@@ -7,7 +7,7 @@ import linkedin from './imagecomp/linkedin.png';
 class NavigationBar extends React.Component {
     render() {
         return (
-            <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-white" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
               <a className="navbar-item" href="/">
                 Home

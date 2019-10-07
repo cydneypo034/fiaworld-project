@@ -20,23 +20,24 @@ class Artists extends React.Component {
         })
     }
 
-
-
-
     render() {
 
         var { artists } = this.state;
 
         return (
-            <div>
-               <ul>
+            <div className="card">
+                <div className="content" >
+                   
                    {artists.map(artist => (
-                       <li key={artist.id}>
-                           Name: {artist.name} | Biography: {artist.biography} |
-                           <img src={artist.artist_image} alt="artist" />
-                       </li>
+                       <div key={artist.id}>
+                           Name: {artist.name} 
+                           | Biography: {artist.biography} 
+                           | Image: <img src={artist.artist_image} alt="artist" />
+                       </div>
                    ))}
-               </ul>
+       
+                </div>
+               
                 </div>
         )
     }
