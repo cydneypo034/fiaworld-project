@@ -32,7 +32,7 @@ class Artists extends React.Component {
                        <div key={artist.id}>
                            Name: {artist.name} 
                            | Biography: {artist.biography} 
-                           | Image: <img src={`${artist.artist_image}`} />
+                           | Image: <img src={artist.artist_image} alt="artist"/>
                        </div>
                    ))}
        
@@ -41,7 +41,7 @@ class Artists extends React.Component {
                 </div>
         )
     }
-
+//'http://localhost:8000/media/uploads/Screen_Shot_2019-10-06_at_7.56.35_PM.png'
 }
 
 export default Artists;
