@@ -10,7 +10,8 @@ import AboutProd from './components/aboutproducer.js';
 import TalkShows from './components/talkshows.js';
 import Contact from './components/contact.js';
 import NavigationBar from './components/navigationbar.js';
-import Footer from './components/footer.js'
+import Footer from './components/footer.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   render() {

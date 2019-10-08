@@ -35,7 +35,12 @@ body{
   color: White;
   text-align: center;
 }
-
+.home-text3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 106px;
+  color: black;
+  text-align: center;
+}
 .contact-text{
   font-family: 'Open Sans', sans-serif;
   font-size: 136px;
