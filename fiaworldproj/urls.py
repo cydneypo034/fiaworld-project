@@ -23,8 +23,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('fiaworldapp.urls')),
-    re_path(r'^.*$', views.FrontendAppView.as_view())
-    # path('', views.FrontendAppView.as_view())
+    #re_path(r'^.*$', views.FrontendAppView.as_view())
+    path('', views.FrontendAppView.as_view())
 ]
 
 if settings.DEBUG: # new
