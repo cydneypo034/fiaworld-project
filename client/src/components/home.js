@@ -34,31 +34,31 @@ class Home extends React.Component {
                 <div className="card has-background-dark">
                     <img src={stephanie} alt="stephanie" className="artist-image"/>
                     <br/>
-                    <h3 className="about-text2">Stephanie Bookman</h3>
+                    <h3 className="about-text-card">Stephanie Bookman</h3>
                     <p className="para-center">Stephanie Bookman is an excellent songstress. She provides a musical experience that is spirit 
                     filled while her vocal quality is only surpassed by love for priase. A soft heart with the hope and faith of Hannah.</p>
-                    <Button variant="light">Video Available Here</Button>
+                    <Button variant="outline-light">Video Available Here</Button>
                     <br></br>
                 </div>
 
                 <div className="card has-background-dark">
                 <img src={chynah} alt="chynah" className="artist-image2"/>
                 <br/>
-                    <h3 className="about-text2">Chynah Mari</h3>
+                    <h3 className="about-text-card">Chynah Mari</h3>
                     <p className="para-center">Chynah Mari is truly one of a kind. Her writing skilz are ahead of the rap game 
                     and include her deeply profound spiritual enlightenment. High energy, a well known model, and spiritually in touch. </p>
 
-                    <Button variant="light">Music Available Here</Button>
+                    <Button variant="outline-light">Music Available Here</Button>
                     <br></br>
                 </div>
 
                 <div className="card has-background-dark">
                 <img src={jasmine} alt="jasmine" className="artist-image3"/>
                 <br/>
-                    <h3 className="about-text2">Jasmine Seabron</h3>
+                    <h3 className="about-text-card">Jasmine Seabron</h3>
                     <p className="para-center">Jasmine Seabron is a very talented gospel music singer. Her renditions of contemporary gospel standards are heart moving and although she is physically blind, 
                     her spiritual sight is unmistakable.   </p>
-                    <Button variant="light">Video Available Here</Button>
+                    <Button variant="outline-light">Video Available Here</Button>
                     <br></br>
                 </div>
             </div>

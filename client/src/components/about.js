@@ -1,12 +1,12 @@
 import React from 'react';
-import FiaGospel from './imagecomp/fiagospelimage.jpg'
 
 class About extends React.Component {
     render() {
         return (
             <div className="about-body">
-                <img src={FiaGospel} alt="treble note and dove" className="about-gospelpic" />
+
                 <div className="about-box">
+                    <div className="container">
                 <h1 className="about-text2">Serving Atlanta with Great Entertainment</h1>
                 <p className="about-text">FIA Corporation has been serving the 
                     Atlanta community in music as well as, 
@@ -51,6 +51,7 @@ class About extends React.Component {
                 week. Visitors can hear both pre-recorded talk shows and their
                 favorite FIA artists.
                 </h6>
+                </div>
                 </div>
                 </div>
         )

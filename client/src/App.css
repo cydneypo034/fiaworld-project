@@ -15,26 +15,31 @@ body {
 }
 
 .about-text2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 36px;
+  font-family: acier-bat-solid,sans-serif;
+  font-weight: 400;
+  font-style: normal;  
+  font-size: 69px;
   color: whitesmoke;
 }
 
 .about-text-sub {
-  font-family: 'Open Sans', sans-serif;
+  font-family: acier-bat-solid,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 25px;
   color: white;
 }
 
 .about-box {
-  padding: 90px;
+  color: whitesmoke;
+  padding: 80px;
 }
 
-.about-gospelpic {
-  float: left;
-  height: 760px;
-  width: 620px;
-  padding: 80px;
+.about-text-card {
+  font-family: acier-bat-solid,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: whitesmoke;
 }
 
 .artist-image {
@@ -50,7 +55,9 @@ body {
 }
 
 .contact-text{
-  font-family: 'Open Sans', sans-serif;
+  font-family: acier-bat-noir,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 136px;
   color: whitesmoke;
   text-align: center;
@@ -68,6 +75,14 @@ body {
   background-color: #252525;
 
 }
+.container {
+  position: relative;
+}
+
+
+.card:hover {
+  background-color: blue;
+}
 .card {
   width: 26rem;
   height: 45rem;
@@ -80,6 +95,9 @@ body {
 
 }
 
+.card:hover {
+  background-color: blue;
+}
 
 @media screen and (min-width: 700px){
   .card-wrapper{
@@ -136,14 +154,19 @@ body {
   background-size: cover; 
 }
 
+
 .home-text2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: acier-bat-noir,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 136px;
   color: whitesmoke;
   text-align: center;
 }
 .home-text3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: acier-bat-noir,sans-serif;
+font-weight: 400;
+font-style: normal;
   font-size: 106px;
   color: whitesmoke;
   text-align: center;
@@ -160,7 +183,7 @@ img{
 }
 .nav-hover {
   font-family: 'Open Sans', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .navigate-bar {

@@ -1,13 +1,11 @@
 import React from 'react';
 
-import solomon from './imagecomp/drsolomon.jpg'
 
 
 class AboutProducer extends React.Component {
     render () {
         return (
             <div className="about-body">
-                <img src={solomon} alt="man with guitar" className="about-gospelpic" />
                 <div className="producer-box" >
                 <h1 className="about-text2">Meet Dr. P!</h1>
 
