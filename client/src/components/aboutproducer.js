@@ -1,6 +1,6 @@
 import React from 'react';
 
-import solomon from './imagecomp/solomon.png'
+import solomon from './imagecomp/drsolomon.jpg'
 
 
 class AboutProducer extends React.Component {

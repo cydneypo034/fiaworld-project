@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 
 
 
@@ -26,6 +26,10 @@ class NavigationBar extends React.Component {
                 </NavDropdown>
                 <Nav.Link href="/contact" className="nav-hover">Contact</Nav.Link>
               </Nav>
+              <Form inline>
+              <FormControl type="text" placeholder="Email" className="mr-md-2" />
+              <Button variant="outline-primary">Sign Up</Button>
+            </Form>
               
 
             </Navbar.Collapse>
@@ -40,69 +44,3 @@ class NavigationBar extends React.Component {
 
 export default NavigationBar;
 
-/*
-<nav className="navbar is-white" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-              <a className="navbar-item" href="/">
-                Home
-              </a>
-              
-            </div>
-
-
-
-            <div id="navbarBasicExample" className="navbar-menu">
-              <div className="navbar-start">
-
-
-              <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link">
-                    About
-                  </a>
-
-                <div className="navbar-dropdown">
-                <a className="navbar-item" href="/about" >
-                  About FIA Corporation
-                </a>
-
-                <a className="navbar-item" href="/aboutprod" >
-                  Meet The Producer
-                </a>
-                </div>
-                </div>
-
-                <a className="navbar-item" href="/createartist">
-                  Create Artist
-                </a>
-          
-
-                <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link">
-                   More
-                  </a>
-          
-                  <div className="navbar-dropdown">
-                    <a className="navbar-item" href="/artists">
-                      Music Artists
-                    </a>
-                    <a className="navbar-item" href="/movies">
-                      Movies & Media
-                    </a>
-                    <a className="navbar-item" href="/talkshows">
-                      Talk Shows
-                    </a>
-                  </div>
-                  
-                  
-                </div>
-                <a className="navbar-item" href="/contact">
-                  Contact
-                </a>
-              </div>
-
-              
-          
-              
-            </div>
-          </nav>
-*/
