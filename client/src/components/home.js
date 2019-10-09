@@ -3,10 +3,16 @@ import stephanie from './imagecomp/aubreysavage.jpg';
 import chynah from './imagecomp/chynah.png';
 import jasmine from './imagecomp/yolanda.jpeg';
 import {Button} from 'react-bootstrap';
-
+import LoginModal from './loginModal.js';
 
 class Home extends React.Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {addModalShow: false}
+    }
     render() {
+        let addModalClose = () => this.setState({addModalShow: false})
         return (
             <div>
 
@@ -22,8 +28,15 @@ class Home extends React.Component {
                     Atlanta community in music as well as, 
                     video broadcasting and production since 1993. 
                     We are a Corporation that is multi-faceted by providing several
-                    services in entertainment and media.
+                    services in entertainment and media. 
                 </h2>
+                
+                <div className="text-center">
+                <button className="btn btn-outline-light" 
+                onClick={() => this.setState({addModalShow: true})}>Admin Login</button>
+
+                <LoginModal show={this.state.addModalShow} onHide={addModalClose} />
+                </div>
                 </div>
             </div>
             </section>

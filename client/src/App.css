@@ -54,6 +54,9 @@ body {
   height: 450px
 }
 
+.button-class {
+  float:right;
+}
 .contact-text{
   font-family: acier-bat-noir,sans-serif;
   font-weight: 400;
