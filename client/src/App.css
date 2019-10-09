@@ -3,71 +3,12 @@ body {
 }
 .about-body {
   background-color: #252525;
-
-}
-.has-bg-img {
-  background: url('./components/imagecomp/particlesbckgrnd.jpg') center;
-  background-size: cover; 
-}
-
-.subtitle {
-  color: white
-}
-
-.footer-text{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  color: white;
-}
-
-.icon {
-  padding: 10px;
-  height: 80px;
-  width: 72px;
 }
 
 .artist-image {
   height: 110px;
 }
 
-.navigate-bar {
-  background-color: #252525;
-}
-
-.navbar-item {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-}
-
-.home-text2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 136px;
-  color: whitesmoke;
-  text-align: center;
-}
-.home-text3 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 106px;
-  color: whitesmoke;
-  text-align: center;
-}
-.contact-text{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 136px;
-  color: black;
-  text-align: center;
-}
-.card-black {
-  background-color: #252525;
-  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
-
-}
-.para-center {
-  font-family: 'Open Sans', sans-serif;
-  color: whitesmoke;
-  text-align: center;
-  padding: 20px;
-}
 .about-text {
   font-family: 'Open Sans', sans-serif;
   color: whitesmoke;
@@ -89,11 +30,6 @@ body {
   padding: 90px;
 }
 
-.producer-box {
-
-    padding: 250px;
-
-}
 .about-gospelpic {
   float: left;
   height: 760px;
@@ -113,21 +49,16 @@ body {
   height: 450px
 }
 
-.footer {
+.contact-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 136px;
+  color: whitesmoke;
+  text-align: center;
+}
+.card-black {
   background-color: #252525;
-  position: absolute;
-  bottom: 10;
-  width: 100%;
-  height: 2.5rem;
-}
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
 
-img{ 
-  width: 520px;
-}
-
-.dj-photo {
-  width: 1600px;
-  height: 600px;
 }
 .card-wrapper {
   display: flex;
@@ -149,10 +80,6 @@ img{
 
 }
 
-.nav-hover {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 26px;
-}
 
 @media screen and (min-width: 700px){
   .card-wrapper{
@@ -183,5 +110,81 @@ img{
   .card:nth-child(3){
       animation: fadeIn .5s .5s backwards;
   }
+}
+
+.dj-photo {
+  width: 1600px;
+  height: 600px;
+}
+
+.footer {
+  background-color: #252525;
+  position: absolute;
+  bottom: 10;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.footer-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.has-bg-img {
+  background: url('./components/imagecomp/particlesbckgrnd.jpg') center;
+  background-size: cover; 
+}
+
+.home-text2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 136px;
+  color: whitesmoke;
+  text-align: center;
+}
+.home-text3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 106px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.icon {
+  padding: 10px;
+  height: 80px;
+  width: 72px;
+}
+
+img{ 
+  width: 520px;
+}
+.nav-hover {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+}
+
+.navigate-bar {
+  background-color: #252525;
+}
+
+.navbar-item {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+
+.para-center {
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
+.producer-box {
+    padding: 250px;
+}
+
+.subtitle {
+  color: white
 }
 

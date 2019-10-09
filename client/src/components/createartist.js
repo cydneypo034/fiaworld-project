@@ -1,5 +1,4 @@
 import React from 'react';
-import ampli from './imagecomp/amplipher.jpg'
 import { Form, Button } from 'react-bootstrap';
 
 class CreateArtist extends React.Component {
@@ -69,27 +68,27 @@ class CreateArtist extends React.Component {
 
     render() {
         return (
-            <div>
-                <img src={ampli} alt="ampli" className="dj-photo" />
+            <div className="about-body">
 
+                <h3 className="home-text3">Create New Artist</h3>
 
                 <Form onSubmit={this.handleSubmit}>
                     
-                    <Form.Label>Name</Form.Label>
+                    <Form.Label className="para-center">Name</Form.Label>
                     <Form.Control type="text" 
                     placeholder="Enter name" 
                     value={this.state.name}
                     onChange={this.onChangeName} />
 
                 
-                    <Form.Label>Biography</Form.Label>
+                    <Form.Label className="para-center">Biography</Form.Label>
                     <Form.Control type="text" 
                     placeholder="Your biography must be under 100 characters" 
                     value={this.state.biography}
                     onChange={this.onChangeBiography} 
                     />
 
-                    <Form.Label>Choose File</Form.Label>
+                    <Form.Label className="para-center">Choose File</Form.Label>
                     <Form.Control 
                     type="file" 
                     placeholder="Choose file" 

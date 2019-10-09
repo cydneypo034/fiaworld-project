@@ -6,7 +6,7 @@ import linkedin from './imagecomp/linkedin.png';
 class Contact extends React.Component {
     render() {
         return (
-            <div>
+            <div className="about-body">
             <h6 className="contact-text">Contact Us |
             <a href='https://www.facebook.com/FIA.Broadcast.Network?fref=ts'><img src={facebook} alt="facebook" 
                     className="icon"/></a>

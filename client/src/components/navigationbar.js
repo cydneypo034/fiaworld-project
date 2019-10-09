@@ -28,7 +28,7 @@ class NavigationBar extends React.Component {
               </Nav>
               <Form inline>
               <FormControl type="text" placeholder="Email" className="mr-md-2" />
-              <Button variant="outline-primary">Sign Up</Button>
+              <Button variant="outline-dark">Newsletter Sign Up</Button>
             </Form>
               
 
