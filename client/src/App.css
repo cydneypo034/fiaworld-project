@@ -1,8 +1,10 @@
-
-body{
-  background-color: #ffffff;
+body {
+  background-color: #252525;
 }
+.about-body {
+  background-color: #252525;
 
+}
 .has-bg-img {
   background: url('./components/imagecomp/particlesbckgrnd.jpg') center;
   background-size: cover; 
@@ -28,6 +30,10 @@ body{
   height: 110px;
 }
 
+.navigate-bar {
+  background-color: #252525;
+}
+
 .navbar-item {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -36,13 +42,13 @@ body{
 .home-text2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 136px;
-  color: White;
+  color: whitesmoke;
   text-align: center;
 }
 .home-text3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 106px;
-  color: black;
+  color: whitesmoke;
   text-align: center;
 }
 .contact-text{
@@ -51,28 +57,32 @@ body{
   color: black;
   text-align: center;
 }
+.card-black {
+  background-color: #252525;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
 
+}
 .para-center {
   font-family: 'Open Sans', sans-serif;
-  color: black;
+  color: whitesmoke;
   text-align: center;
   padding: 20px;
 }
 .about-text {
   font-family: 'Open Sans', sans-serif;
-  color: black;
+  color: whitesmoke;
 }
 
 .about-text2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 36px;
-  color: black;
+  color: whitesmoke;
 }
 
 .about-text-sub {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
-  color: black;
+  color: white;
 }
 
 .about-box {
@@ -124,11 +134,12 @@ img{
   align-items: center;
   align-content: center;
   flex-direction: column;
+  background-color: #252525;
+
 }
 .card {
   width: 26rem;
   height: 45rem;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,13 +147,6 @@ img{
   margin: 1rem 0;
   box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
 
-}
-
-.home-link:hover{
-  color: white;
-}
-.card:hover{
-  background-color: #5252FF;
 }
 
 .nav-hover {

@@ -25,7 +25,7 @@ class Movies extends React.Component {
          const Movie = props => (
              <Card style={{width: '21rem', height: '37rem'}} >
                  <Card.Img variant='top' src={props.movie.movie_image} alt="movie" className="artist-image"/>
-                 <Card.Body>
+                 <Card.Body className="card-black">
                      <Card.Text className="about-text">
                          {props.movie.name} <br />
                          {props.movie.description}
@@ -42,7 +42,7 @@ class Movies extends React.Component {
 
 
         return (
-            <div >
+            <div className="about-body">
                 <h1 className="home-text3">View Our Movies</h1>
                 <p className="para-center">KCSquared has been involved in the sound production of several movies
                  and plays here in Atlanta. We also have produced music videos for a few of the artists under FIA Gospel Productions. <br/> Below are a few of the 

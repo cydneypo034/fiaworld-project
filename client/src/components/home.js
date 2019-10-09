@@ -31,7 +31,7 @@ class Home extends React.Component {
 
             <section>
             <div className="card-wrapper">
-                <div className="card">
+                <div className="card has-background-dark">
                     <img src={stephanie} alt="stephanie" className="artist-image"/>
                     <br/>
                     <h3 className="about-text2">Stephanie Bookman</h3>
@@ -41,7 +41,7 @@ class Home extends React.Component {
                     <br></br>
                 </div>
 
-                <div className="card">
+                <div className="card has-background-dark">
                 <img src={chynah} alt="chynah" className="artist-image2"/>
                 <br/>
                     <h3 className="about-text2">Chynah Mari</h3>
@@ -52,7 +52,7 @@ class Home extends React.Component {
                     <br></br>
                 </div>
 
-                <div className="card">
+                <div className="card has-background-dark">
                 <img src={jasmine} alt="jasmine" className="artist-image3"/>
                 <br/>
                     <h3 className="about-text2">Jasmine Seabron</h3>

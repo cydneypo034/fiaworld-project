@@ -23,9 +23,9 @@ class Artists extends React.Component {
 
     artistList() {
         const Artist = props => (
-            <Card style={{width: '18rem', height: '37rem'}} >
+            <Card style={{width: '18rem', height: '37rem'}}  >
                 <Card.Img variant='top' src={props.artist.artist_image} alt="artist" className="artist-image"/>
-                <Card.Body>
+                <Card.Body className="card-black">
                     <Card.Text className="about-text">
                         {props.artist.name} <br />
                         {props.artist.biography}
@@ -42,14 +42,14 @@ class Artists extends React.Component {
 
 
         return (
-            <div >
+            <div className="about-body">
                 <h1 className="home-text3">Meet Our Music Artists</h1>
                 <p className="para-center">Mosa Recording Studios and Fia Gospel Productions have 
                 produced several artists
                 since it's inception in 1993. <br/> Below are a few of the 
                 many incredible talents we've produced hit records from.</p>
             <div className="card-wrapper">
-
+            
                {this.artistList()}
                
                 </div>

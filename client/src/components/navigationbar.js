@@ -7,7 +7,7 @@ class NavigationBar extends React.Component {
     render() {
         return (
          <div>
-           <Navbar bg="white" expand="lg">
+           <Navbar className="navigate-bar" expand="lg">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">            

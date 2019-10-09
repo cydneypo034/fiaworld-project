@@ -25,7 +25,7 @@ class TalkShows extends React.Component {
          const Show = props => (
              <Card style={{width: '21rem', height: '37rem'}} >
                  <Card.Img variant='top' src={props.show.show_image} alt="movie" className="artist-image"/>
-                 <Card.Body>
+                 <Card.Body className="card-black">
                      <Card.Text className="about-text">
                          {props.show.name} <br />
                          {props.show.description} <br />
@@ -43,7 +43,7 @@ class TalkShows extends React.Component {
 
 
         return (
-            <div >
+            <div className="about-body" >
                 <h1 className="home-text3">Listen To Our Talk Shows</h1>
                 <p className="para-center">The FIA Broadcasting Network has 
                 produced several talk shows since 2009. <br/> Below are a few of the 

@@ -4,7 +4,7 @@ import FiaGospel from './imagecomp/fiagospelimage.jpg'
 class About extends React.Component {
     render() {
         return (
-            <div>
+            <div className="about-body">
                 <img src={FiaGospel} alt="treble note and dove" className="about-gospelpic" />
                 <div className="about-box">
                 <h1 className="about-text2">Serving Atlanta with Great Entertainment</h1>
