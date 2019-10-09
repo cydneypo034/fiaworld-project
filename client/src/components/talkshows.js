@@ -24,7 +24,7 @@ class TalkShows extends React.Component {
     showList() {
          const Show = props => (
              <Card style={{width: '21rem', height: '37rem'}} >
-                 <Card.Img variant='top' src={props.show.show_image} alt="artist" className="artist-image"/>
+                 <Card.Img variant='top' src={props.show.show_image} alt="movie" className="artist-image"/>
                  <Card.Body>
                      <Card.Text className="about-text">
                          {props.show.name} <br />
