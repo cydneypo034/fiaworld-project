@@ -24,6 +24,10 @@ body{
   width: 72px;
 }
 
+.artist-image {
+  height: 110px;
+}
+
 .navbar-item {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -75,9 +79,14 @@ body{
   padding: 90px;
 }
 
+.producer-box {
+
+    padding: 230px;
+
+}
 .about-gospelpic {
   float: left;
-  height: 830px;
+  height: 730px;
   width: 630px;
   padding: 80px;
 }
@@ -118,7 +127,7 @@ img{
 }
 .card {
   width: 26rem;
-  height: 46rem;
+  height: 45rem;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -127,6 +136,18 @@ img{
   margin: 1rem 0;
   box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
 
+}
+
+.home-link:hover{
+  color: white;
+}
+.card:hover{
+  background-color: #5252FF;
+}
+
+.nav-hover {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
 }
 
 @media screen and (min-width: 700px){

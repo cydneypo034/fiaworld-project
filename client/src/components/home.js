@@ -1,7 +1,7 @@
 import React from 'react';
-import stephanie from './imagecomp/stephanie.png';
+import stephanie from './imagecomp/aubreysavage.jpg';
 import chynah from './imagecomp/chynah.png';
-import jasmine from './imagecomp/jasmine.png';
+import jasmine from './imagecomp/yolanda.jpeg';
 
 
 class Home extends React.Component {
@@ -9,7 +9,7 @@ class Home extends React.Component {
         return (
             <div>
 
-            <section className="hero is-large has-bg-img">
+            <section className="hero is-medium has-bg-img">
 
             <div className="hero-body">
                 <div className="container">
@@ -36,7 +36,7 @@ class Home extends React.Component {
                     <p className="para-center">Stephanie Bookman is an excellent songstress. She provides a musical experience that is spirit 
                     filled while her vocal quality is only surpassed by love for priase. A soft heart with the hope and faith of Hannah.</p>
                     <br></br>
-                    <a href="https://www.youtube.com/watch?v=nbOuhNjfhvg&feature=youtu.be">Video Available Here</a>
+                    <a href="https://www.youtube.com/watch?v=nbOuhNjfhvg&feature=youtu.be" className="home-link">Video Available Here</a>
                     <br></br>
                 </div>
 
@@ -47,7 +47,7 @@ class Home extends React.Component {
                     and include her deeply profound spiritual enlightenment. High energy, a well known model, and spiritually in touch. </p>
 
                     <br></br>
-                    <a href="http://www.fiaworld.com/rapp.htm">Music Available Here</a>
+                    <a href="http://www.fiaworld.com/rapp.htm" className="home-link">Music Available Here</a>
                     <br></br>
                 </div>
 
@@ -57,7 +57,7 @@ class Home extends React.Component {
                     <p className="para-center">Jasmine Seabron is a very talented gospel music singer. Her renditions of contemporary gospel standards are heart moving and although she is physically blind, 
                     her spiritual sight is unmistakable.   </p>
                     <br></br>
-                    <a href="https://www.youtube.com/watch?v=OX5w-pqJnUE&feature=youtu.be">Video Available Here</a>
+                    <a href="https://www.youtube.com/watch?v=OX5w-pqJnUE&feature=youtu.be" className="home-link">Video Available Here</a>
                     <br></br>
                 </div>
             </div>

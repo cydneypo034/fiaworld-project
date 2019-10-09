@@ -1,5 +1,6 @@
 import React from 'react';
 import ampli from './imagecomp/amplipher.jpg'
+import { Form, Button } from 'react-bootstrap';
 
 class CreateArtist extends React.Component {
 
@@ -13,65 +14,94 @@ class CreateArtist extends React.Component {
         }
 
         this.onChangeName = this.onChangeName.bind(this)
+        this.onChangeBiography = this.onChangeBiography.bind(this)
+        this.onChangeArtistImage = this.onChangeArtistImage.bind(this)
     }
 
     onChangeName(e)  {
         this.setState({
             name: e.target.value
         })
+        console.log('name made!')
     }
 
-    handleSubmit(e) {
+    onChangeBiography(e) {
+        this.setState({
+            biography: e.target.value
+        })
+
+        console.log('bio made!')
+    }
+
+    onChangeArtistImage(e) {
+        this.setState({
+            artist_image: e.target.value
+        })
+
+        console.log("image choosen!")
+    }
+
+    handleSubmit(e, data) {
         e.preventDefault();
 
+        console.log('Form test!')
 
+        const formData = new FormData();
+        const fileField = document.querySelector('input[type="file"]');
+
+
+        formData.append('artist_image', fileField.files[0])
+
+        fetch("/api/artists", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(response => response.json())
+
+        this.setState({
+            name: '',
+            biography: '',
+            artist_image: ''
+        })
     }
 
     render() {
         return (
             <div>
                 <img src={ampli} alt="ampli" className="dj-photo" />
-                <section className="hero is-light is-small">
-            <div className="hero-body">
-                <div className="container">
-                <h1 className="home-text2">
-                    Enter a New Artist
-                </h1>
+
+
+                <Form onSubmit={this.handleSubmit}>
+                    
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control type="text" 
+                    placeholder="Enter name" 
+                    value={this.state.name}
+                    onChange={this.onChangeName} />
+
                 
-                </div>
-            </div>
-            </section>
-                <div className="contact-fields">
-                <div className="field">
-                <label className="label">Your Name</label>
-                <div className="control has-icons-left">
-                    <input className="input is-large" type="text" placeholder="Name"/>
-                    <span className="icon is-small is-left">
-                    <i className="fas fa-user"></i>
-                    </span>
-                </div>
-                </div>
+                    <Form.Label>Biography</Form.Label>
+                    <Form.Control type="text" 
+                    placeholder="Your biography must be under 100 characters" 
+                    value={this.state.biography}
+                    onChange={this.onChangeBiography} 
+                    />
 
-                <div className="field">
-                <label className="label">Biography</label>
-                <div className="control has-icons-left">
-                    <textarea className="textarea is-large" type="input" placeholder="Biography" />
-                </div>
-                </div>
-
-                <div >
-                    <label className="label">Choose File</label>
-                    <div>
-                        <input className="file is-large" type="file" placeholder="Choose file" ></input>
-                    </div>
-                </div>
+                    <Form.Label>Choose File</Form.Label>
+                    <Form.Control 
+                    type="file" 
+                    placeholder="Choose file" 
+                    accept= 'static/media/x-jpeg'
+                    value={this.state.artist_image}
+                    onChange={this.onChangeArtistImage}/>
+                
                 <br />
-
-                <div className="control">
-                <button className="button is-dark">Submit</button>
-                </div>
-             
-                        </div>
+                <Button variant="dark" type="submit">
+                    Submit
+                </Button>
+                </Form>
                         </div>
 
         )

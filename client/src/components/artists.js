@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Button} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 
 class Artists extends React.Component {
 
@@ -24,7 +24,7 @@ class Artists extends React.Component {
     artistList() {
         const Artist = props => (
             <Card style={{width: '18rem', height: '37rem'}} >
-                <Card.Img variant='top' src={props.artist.artist_image} alt="artist"/>
+                <Card.Img variant='top' src={props.artist.artist_image} alt="artist" className="artist-image"/>
                 <Card.Body>
                     <Card.Text className="about-text">
                         {props.artist.name} <br />

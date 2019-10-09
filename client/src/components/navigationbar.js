@@ -1,20 +1,52 @@
 import React from 'react';
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 
 
 
 class NavigationBar extends React.Component {
     render() {
         return (
-            <nav className="navbar is-white" role="navigation" aria-label="main navigation">
+         <div>
+           <Navbar bg="white" expand="lg">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">            
+              <Nav.Link href="/" className="nav-hover">Home</Nav.Link>
+                <Nav.Link href="/createartist" className="nav-hover">Create Artist</Nav.Link>
+                <NavDropdown title="About" id="basic-nav-dropdown" className="nav-hover">
+                  <NavDropdown.Item href="/about">About The Company</NavDropdown.Item>
+                  <NavDropdown.Item href="/aboutprod">Meet The Producer</NavDropdown.Item>
+                  
+                </NavDropdown>
+                <NavDropdown title="View More" id="basic-nav-dropdown" className="nav-hover">
+                  <NavDropdown.Item href="/artists">Music Artists</NavDropdown.Item>
+                  <NavDropdown.Item href="/movies">Movies and TV Shows</NavDropdown.Item>
+                  <NavDropdown.Item href="/talkshows">Talk Shows</NavDropdown.Item>
+                  
+                </NavDropdown>
+                <Nav.Link href="/contact" className="nav-hover">Contact</Nav.Link>
+              </Nav>
+              
+
+            </Navbar.Collapse>
+          </Navbar>
+         </div>
+
+
+            
+        )
+    }
+}
+
+export default NavigationBar;
+
+/*
+<nav className="navbar is-white" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
               <a className="navbar-item" href="/">
                 Home
               </a>
-              <label className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span></span>
-                <span></span>
-                <span></span>
-                </label>
+              
             </div>
 
 
@@ -73,11 +105,4 @@ class NavigationBar extends React.Component {
               
             </div>
           </nav>
-        )
-    }
-}
-
-export default NavigationBar;
-
-/*
 */

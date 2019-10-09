@@ -8,7 +8,7 @@ class AboutProducer extends React.Component {
         return (
             <div>
                 <img src={solomon} alt="man with guitar" className="about-gospelpic" />
-                <div className="about-box" >
+                <div className="producer-box" >
                 <h1 className="about-text2">Meet Dr. P!</h1>
 
                 <p className="about-text">
