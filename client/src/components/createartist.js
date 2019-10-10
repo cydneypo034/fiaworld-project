@@ -1,11 +1,10 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
 
 class CreateArtist extends React.Component {
 
     constructor(props){
         super(props)
-
+            
         this.state = {
             name: '',
             biography: '',
@@ -17,55 +16,47 @@ class CreateArtist extends React.Component {
         this.onChangeArtistImage = this.onChangeArtistImage.bind(this)
     }
 
-    onChangeName(e)  {
+    onChangeName(e) {
         this.setState({
             name: e.target.value
         })
-        console.log('name made!')
+        console.log("name changed!")
     }
 
     onChangeBiography(e) {
         this.setState({
             biography: e.target.value
         })
-
-        console.log('bio made!')
+        console.log("bio changed!")
     }
 
     onChangeArtistImage(e) {
         this.setState({
             artist_image: e.target.value
         })
-
-        console.log("image choosen!")
+        console.log('picture selected!')
     }
 
-    handleSubmit(e, file, user) {
+
+    onSubmit(e) {
         e.preventDefault();
 
-        var formData = new FormData();
+            
 
-        file.map((file, index) => {
-            formData.append(`file${index}`, file)
-        })
 
-        formData.append('user', user)
 
-        fetch('/api/artists/', {
-            method: 'POST',
-            body: formData,
-        })
-        .then(response => response.json())
-        .then(success => {
-            console.log("data made!")
-        })
-        .catch(error => console.log(error)
-        );
-
+        
 
 
 
     }
+
+
+
+
+
+
+ 
 
     render() {
         return (
@@ -75,40 +66,21 @@ class CreateArtist extends React.Component {
             <div className="hero-body">
                 <div className="container">
                 <h3 className="home-text3">Create New Artist</h3>
-                            <p className="para-center"> For a New Artist to be made, fill out the form below and 
+                <p className="para-center"> For a New Artist to be made, fill out the form below and 
                                 it will be added to the artist list!</p>
                 </div>
                 </div>
             </section>
                             
+                <form onSubmit={this.onSubmit}>
+                    <input type="text" name="name" onChange={this.onChangeName} placeholder="Enter Name" />
+                    <input type="text" name="biography" onChange={this.onChangeBiography} placeholder="Enter bio" />
+                    <input type="file" name="artist_image" onChange={this.onChangeArtistImage} placeholder="choose file" />
 
-                <Form onSubmit={this.handleSubmit}>
-                    
-                    <Form.Label className="para-center">Name</Form.Label>
-                    <Form.Control type="text" 
-                    placeholder="Enter name" 
-                    value={this.state.name}
-                    onChange={this.onChangeName} />
+                    <input type="submit" name="submit" value="submit" />
+                </form>
 
-                
-                    <Form.Label className="para-center">Biography</Form.Label>
-                    <Form.Control type="text" 
-                    placeholder="Your biography must be under 100 characters" 
-                    value={this.state.biography}
-                    onChange={this.onChangeBiography} 
-                    />
-
-                    <Form.Label className="para-center">Choose File</Form.Label>
-                    <div className="custom-file">
-                        <input type="file" className="custom-file-input" id="customFile" />
-                        <label className="custom-file-label" htmlFor="customFile">Choose file</label>
-                        </div>
-                
-                <br />
-                <Button variant="dark" type="submit" value="submit">
-                    Submit
-                </Button>
-                </Form>
+               
                         </div>
 
         )
