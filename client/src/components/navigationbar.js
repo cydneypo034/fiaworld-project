@@ -11,20 +11,20 @@ class NavigationBar extends React.Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">            
-              <Nav.Link href="/" className="nav-hover">Home</Nav.Link>
-                <Nav.Link href="/createartist" className="nav-hover">Create Artist</Nav.Link>
-                <NavDropdown title="About" id="basic-nav-dropdown" className="nav-hover">
+              <Nav.Link href="/" className="text-light">Home</Nav.Link>
+                <Nav.Link href="/createartist" className="text-light">Create Artist</Nav.Link>
+                <NavDropdown title="About" id="basic-nav-dropdown" className="text-light">
                   <NavDropdown.Item href="/about">About The Company</NavDropdown.Item>
                   <NavDropdown.Item href="/aboutprod">Meet The Producer</NavDropdown.Item>
                   
                 </NavDropdown>
-                <NavDropdown title="View More" id="basic-nav-dropdown" className="nav-hover">
+                <NavDropdown title="View More" id="basic-nav-dropdown" className="text-light">
                   <NavDropdown.Item href="/artists">Music Artists</NavDropdown.Item>
                   <NavDropdown.Item href="/movies">Movies and TV Shows</NavDropdown.Item>
                   <NavDropdown.Item href="/talkshows">Talk Shows</NavDropdown.Item>
                   
                 </NavDropdown>
-                <Nav.Link href="/contact" className="nav-hover">Contact</Nav.Link>
+                <Nav.Link href="/contact" className="text-light">Contact</Nav.Link>
               </Nav>
               <Form inline>
               <FormControl type="text" placeholder="Email" className="mr-md-2" />

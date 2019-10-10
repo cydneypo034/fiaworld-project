@@ -70,8 +70,17 @@ class CreateArtist extends React.Component {
     render() {
         return (
             <div className="about-body">
+            <section className="hero is-medium has-bg-img">
 
+            <div className="hero-body">
+                <div className="container">
                 <h3 className="home-text3">Create New Artist</h3>
+                            <p className="para-center"> For a New Artist to be made, fill out the form below and 
+                                it will be added to the artist list!</p>
+                </div>
+                </div>
+            </section>
+                            
 
                 <Form onSubmit={this.handleSubmit}>
                     
