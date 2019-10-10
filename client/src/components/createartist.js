@@ -40,30 +40,31 @@ class CreateArtist extends React.Component {
         console.log("image choosen!")
     }
 
-    handleSubmit(e, data) {
+    handleSubmit(e, file, user) {
         e.preventDefault();
 
-        console.log('Form test!')
+        var formData = new FormData();
 
-        const formData = new FormData();
-        const fileField = document.querySelector('input[type="file"]');
-
-
-        formData.append('artist_image', fileField.files[0])
-
-        fetch("/api/artists", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        }).then(response => response.json())
-
-        this.setState({
-            name: '',
-            biography: '',
-            artist_image: ''
+        file.map((file, index) => {
+            formData.append(`file${index}`, file)
         })
+
+        formData.append('user', user)
+
+        fetch('/api/artists/', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(success => {
+            console.log("data made!")
+        })
+        .catch(error => console.log(error)
+        );
+
+
+
+
     }
 
     render() {
@@ -89,15 +90,13 @@ class CreateArtist extends React.Component {
                     />
 
                     <Form.Label className="para-center">Choose File</Form.Label>
-                    <Form.Control 
-                    type="file" 
-                    placeholder="Choose file" 
-                    accept= 'static/media/x-jpeg'
-                    value={this.state.artist_image}
-                    onChange={this.onChangeArtistImage}/>
+                    <div className="custom-file">
+                        <input type="file" className="custom-file-input" id="customFile" />
+                        <label className="custom-file-label" htmlFor="customFile">Choose file</label>
+                        </div>
                 
                 <br />
-                <Button variant="dark" type="submit">
+                <Button variant="dark" type="submit" value="submit">
                     Submit
                 </Button>
                 </Form>
@@ -108,3 +107,25 @@ class CreateArtist extends React.Component {
 }
 
 export default CreateArtist;
+
+// console.log('Form test!')
+
+//         const formData = new FormData();
+//         const fileField = document.querySelector('input[type="file"]');
+
+
+//         formData.append('artist_image', fileField.files[0])
+
+//         fetch("/api/artists", {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify(data)
+//         }).then(response => response.json())
+
+//         this.setState({
+//             name: '',
+//             biography: '',
+//             artist_image: ''
+//         })

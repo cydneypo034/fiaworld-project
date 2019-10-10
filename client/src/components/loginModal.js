@@ -1,5 +1,5 @@
 import React from 'react';
-import {Modal, Button} from 'react-bootstrap';
+import {Modal, Button, Form} from 'react-bootstrap';
 
 
 class LoginModel extends React.Component {
@@ -7,28 +7,31 @@ class LoginModel extends React.Component {
     render () {
         return (
             <Modal
-      {...this.props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={this.props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
+                {...this.props}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+                
+                >
+            <Modal.Header closeButton className="about-body">
+                <Modal.Title id="contained-modal-title-vcenter" className="para-center">
+                Login For Owner Only
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body className="about-body">
+                
+                <Form >
+                <Form.Control type="text" placeholder="Enter username" />
+                <br />
+                <Form.Control type="text" placeholder="Enter password" />
+                <br />
+                <Form.Control type="submit" value="submit" />
+                </Form>
+            </Modal.Body>
+            <Modal.Footer className="about-body">
+                <Button variant="outline-light" onClick={this.props.onHide}>Close</Button>
+            </Modal.Footer>
+            </Modal>
         )
     }
 }
