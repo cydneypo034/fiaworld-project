@@ -34,7 +34,7 @@ class Artists extends React.Component {
                     </Card.Text>
                     <div className="middle">
                    <div className="text">
-                       <button className="btn btn-outline-light">Delete</button>
+                       <button className="btn btn-outline-light" onClick={() => this.deleteArtist(props.artist.id)}>Delete</button>
                    </div> 
                    </div>
                 </Card.Body>
@@ -45,6 +45,12 @@ class Artists extends React.Component {
             return <Artist artist={currentArtist} key={i} />
         });
     }
+    deleteArtist(id){
+        fetch(`api/artists/${id}`, {
+            method: "DELETE",
+        }).then(res => res.json())
+        .then(res => console.log("Deleted id:", res))
+    } 
 
     render() {
 

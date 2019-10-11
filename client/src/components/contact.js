@@ -1,9 +1,7 @@
 import React from 'react';
-import facebook from './imagecomp/facebook.png';
-import twitter from './imagecomp/twitter.png';
-import linkedin from './imagecomp/linkedin.png';
 
 class Contact extends React.Component {
+   
     render() {
         return (
             
@@ -13,18 +11,17 @@ class Contact extends React.Component {
                 <div className="hero-body">
                     <div className="container">
                     
-            <h6 className="contact-text">Contact Us &nbsp;
-            <a href='https://www.facebook.com/FIA.Broadcast.Network?fref=ts'><img src={facebook} alt="facebook" 
-                    className="icon"/></a>
-                    
-                <a href="https://twitter.com/fbn99"><img src={twitter} alt="twitter" 
-                className="icon"/></a>
-                    
-                <a href="https://www.linkedin.com/in/dr-solomon-pollard-jr-33888026/"><img src={linkedin} 
-                    alt="linkedin" className="icon"/></a>
+            <h6 className="contact-text">Contact Us</h6>
+            
 
-              </h6>
+            <div className="contact-socials">
+            <a href='https://www.facebook.com/FIA.Broadcast.Network?fref=ts'>Facebook </a>
                     
+                <a href="https://twitter.com/fbn99">Twitter </a>
+                    
+                <a href="https://www.linkedin.com/in/dr-solomon-pollard-jr-33888026/">LinkedIn</a>
+                </div>
+
 
               <p className="para-center">If you are an aspiring artist, film producer needing sound production, or an
               aspiring talk show host, feel free to contact us through the contact form below.</p>
@@ -37,42 +34,32 @@ class Contact extends React.Component {
 
 
         <div className="contact-fields">
-                <div className="field">
-                <label className="subtitle">Your Name</label>
-                <div className="control has-icons-left">
-                    <input className="input is-large" type="text" placeholder="Your Name"/>
-                    <span className="icon is-small is-left">
-                    <i className="fas fa-user"></i>
-                    </span>
-                </div>
-                </div>
+                
 
-                <div className="field">
-                <label className="subtitle">Your Email</label>
-                <div className="control has-icons-left">
-                    <input className="input is-large" type="text" placeholder="Your Email"/>
-                    <span className="icon is-small is-left">
-                    <i className="fas fa-envelope"></i>
-                    </span>
-                </div>
-                </div>
+                <form className="feedback-form">
+                
 
-                <div className="field">
                 <label className="subtitle">Your Message</label>
                 <div className="control has-icons-left">
-                    <textarea className="textarea is-large" type="input" placeholder="Your Message" />
-                </div>
+                    <textarea 
+                    className="textarea is-large" 
+                    type="input" 
+                    id="feedback-entry"
+                    name="feedback-entry"
+                    placeholder="Your Message"
+                    required/>
                 </div>
 
 
                 <div className="control">
                 <button className="button is-dark">Submit</button>
                 </div>
-            </div>
+            </form>
 
             <br />
 
            
+              </div>
               </div>
             
         )

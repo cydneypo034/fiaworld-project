@@ -82,6 +82,13 @@ body {
 
 }
 
+.contact-socials{
+  text-align: center;
+  font-size: 'Open Sans', sans-serif;
+  font-size: 25px;
+  margin: 10px;
+}
+
 
 .card {
   width: 26rem;
@@ -141,6 +148,10 @@ body {
 
 }
 
+.footer-float {
+  float: left;
+}
+
 .footer-text{
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -171,8 +182,8 @@ font-style: normal;
 }
 
 .icon {
-  padding: 10px;
-  height: 90px;
+  padding: 15px;
+  height: 80px;
   width: 65px;
 }
 
@@ -186,7 +197,6 @@ img{
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #252525;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
