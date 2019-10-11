@@ -1,12 +1,12 @@
 import React from 'react';
-
+import solomon from './imagecomp/solomon.jpg';
 
 
 class AboutProducer extends React.Component {
     render () {
         return (
             <div className="about-body">
-                <div className="producer-box" >
+                <div className="about-box" >
                 <h1 className="about-text2">Meet Dr. P!</h1>
 
                 <p className="about-text">
@@ -19,6 +19,7 @@ class AboutProducer extends React.Component {
                 He is a gifted talent and his tracks reflect multi-instrument jazz, film scoring tracks, and TV production 
                 music support.
                 </p>
+                <img src={solomon} alt="black man holding guitar" className="producer-image" />
                 </div>
             </div>
         )

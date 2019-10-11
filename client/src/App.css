@@ -21,7 +21,7 @@ body {
   font-family: acier-bat-solid,sans-serif;
   font-weight: 400;
   font-style: normal;  
-  font-size: 69px;
+  font-size: 49px;
   color: whitesmoke;
 }
 
@@ -64,7 +64,7 @@ body {
   font-family: acier-bat-noir,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 136px;
+  font-size: 60px;
   color: whitesmoke;
   text-align: center;
 }
@@ -81,9 +81,7 @@ body {
   background-color: #252525;
 
 }
-.container {
-  position: relative;
-}
+
 
 .card {
   width: 26rem;
@@ -159,7 +157,7 @@ body {
   font-family: acier-bat-noir,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 136px;
+  font-size: 60px;
   color: whitesmoke;
   text-align: center;
 }
@@ -174,8 +172,8 @@ font-style: normal;
 
 .icon {
   padding: 10px;
-  height: 80px;
-  width: 72px;
+  height: 90px;
+  width: 65px;
 }
 
 img{ 
@@ -188,26 +186,23 @@ img{
   position: absolute;
   top: 50%;
   left: 50%;
+  background-color: #252525;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.container{
-  position: relative;
-  width: 50%;
-}
 
-.contai:hover .image{
+.contain:hover .image{
   opacity: 0.3;
 }
 
-.contai:hover .middle{
+.contain:hover .middle{
   opacity: 1;
 }
 
 .navigate-bar {
-  background-color: #252525;
+  background-color: #353535;
   box-shadow: .3rem .3rem 3rem rgba(0,0,0,0.5);
 }
 
@@ -224,15 +219,17 @@ img{
   padding: 20px;
 }
 
-.producer-box {
-    padding: 250px;
+.producer-image {
+  height: 100%;
+  width: 100%;
 }
+
 
 .subtitle {
   color: white
 }
 
-.text-light {
+.text {
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
 }

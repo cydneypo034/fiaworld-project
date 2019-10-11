@@ -24,7 +24,7 @@ class Artists extends React.Component {
     artistList() {
         const Artist = props => (
             <Card style={{width: '18rem', height: '37.8rem'}}  >
-                <div className="contai">
+                <div className="contain">
                 <Card.Img variant='top' src={props.artist.artist_image} alt="artist" className="artist-image"/>
                 
                    <Card.Body className="card-black">
