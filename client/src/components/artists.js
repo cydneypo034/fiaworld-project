@@ -51,7 +51,11 @@ class Artists extends React.Component {
             <div className="card-wrapper">
             
                {this.artistList()}
-               
+               <div className="middle">
+                   <div className="text">
+                       
+                   </div>
+               </div>
                 </div>
                 </div>
         )
