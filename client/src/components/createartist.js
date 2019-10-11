@@ -1,4 +1,5 @@
 import React from 'react';
+import { Form } from 'react-bootstrap';
 
 class CreateArtist extends React.Component {
 
@@ -78,31 +79,30 @@ class CreateArtist extends React.Component {
 
                 <form onSubmit={this.onSubmit} id="myForm" name="myForm">
                     <label htmlFor="name">Enter Name:</label>
-                    <input type="text" 
+                    <Form.Control type="text" 
                     id="name" 
                     value={this.state.name}
                     onChange={this.onChangeName} 
                     placeholder="Enter Name" />
 
-                    <br />
-                    <br />
+                   
                     <label htmlFor="biography">Enter biography:</label>
-                    <input type="text" 
+                    <Form.Control type="text" 
                     id="biography" 
                     value={this.state.biography}
                     onChange={this.onChangeBiography} 
                     placeholder="Enter bio" />
-                    <br />
-                    <br />
+               
 
                     <label htmlFor="artist_image">Enter URL:</label>
-                    <input type="text" 
+                    <Form.Control type="text" 
                     id="image" 
                     value={this.state.artist_image}
                     onChange={this.onChangeArtistImage} 
                     placeholder="Enter URL" />
 
-                    <input type="submit" value="submit" />
+                    <br />
+                    <button className="btn btn btn-outline-light" type="submit" value="submit">Submit</button>
                 </form>
 
 
