@@ -32,30 +32,50 @@ class Contact extends React.Component {
                 </div>
                 </section>
 
+        <div className="container">
+                <div className="contact-fields">
+                        
 
-        <div className="contact-fields">
-                
+                        <form className="feedback-form">
+                        <label className="subtitle">Your Name</label>
+                        <div className="control">
+                            <input 
+                            className="input is-large" 
+                            type="input" 
+                            id="feedback-entry"
+                            name="feedback-entry"
+                            placeholder="Your Email"
+                            required/>
+                        </div>
+                        <br />
+                        <label className="subtitle">Your Email</label>
+                        <div className="control">
+                            <input 
+                            className="input is-large" 
+                            type="input" 
+                            id="feedback-entry"
+                            name="feedback-entry"
+                            placeholder="Your Email"
+                            required/>
+                        </div>
+                        <br />
+                        <label className="subtitle">Your Message</label>
+                        <div className="control">
+                            <textarea 
+                            className="textarea is-large" 
+                            type="input" 
+                            id="feedback-entry"
+                            name="feedback-entry"
+                            placeholder="Your Message"
+                            required/>
+                        </div>
 
-                <form className="feedback-form">
-                
-
-                <label className="subtitle">Your Message</label>
-                <div className="control has-icons-left">
-                    <textarea 
-                    className="textarea is-large" 
-                    type="input" 
-                    id="feedback-entry"
-                    name="feedback-entry"
-                    placeholder="Your Message"
-                    required/>
-                </div>
-
-
-                <div className="control">
-                <button className="button is-dark">Submit</button>
-                </div>
-            </form>
-
+                        <br />
+                        <div className="control">
+                        <button className="button is-dark">Submit</button>
+                        </div>
+                    </form>
+        </div>
             <br />
 
            

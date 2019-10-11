@@ -70,12 +70,14 @@ class CreateArtist extends React.Component {
 
                     <div className="hero-body">
                         <div className="container">
-                            <h3 className="home-text3">Create New Artist</h3>
+                            <h3 className="contact-text">Create New Artist</h3>
                             <p className="para-center"> For a New Artist to be made, fill out the form below and
                                 it will be added to the artist list!</p>
                         </div>
                     </div>
                 </section>
+
+                <div className="container">
 
                 <form onSubmit={this.onSubmit} id="myForm" name="myForm">
                     <label htmlFor="name">Enter Name:</label>
@@ -104,7 +106,8 @@ class CreateArtist extends React.Component {
                     <br />
                     <button className="btn btn btn-outline-light" type="submit" value="submit">Submit</button>
                 </form>
-
+                <br />
+            </div>
 
             </div>
 
