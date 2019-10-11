@@ -23,14 +23,22 @@ class Artists extends React.Component {
 
     artistList() {
         const Artist = props => (
-            <Card style={{width: '18rem', height: '37rem'}}  >
+            <Card style={{width: '18rem', height: '37.8rem'}}  >
+                <div className="contai">
                 <Card.Img variant='top' src={props.artist.artist_image} alt="artist" className="artist-image"/>
-                <Card.Body className="card-black">
+                
+                   <Card.Body className="card-black">
                     <Card.Text className="about-text">
                         {props.artist.name} <br />
                         {props.artist.biography}
                     </Card.Text>
+                    <div className="middle">
+                   <div className="text">
+                       <button className="btn btn-outline-light">Delete</button>
+                   </div> 
+                   </div>
                 </Card.Body>
+                </div>
             </Card>
         )
         return this.state.artists.map(function(currentArtist, i){
@@ -51,11 +59,8 @@ class Artists extends React.Component {
             <div className="card-wrapper">
             
                {this.artistList()}
-               <div className="middle">
-                   <div className="text">
-                       
-                   </div>
-               </div>
+               
+              
                 </div>
                 </div>
         )
