@@ -8,11 +8,13 @@ class CreateArtist extends React.Component {
         this.state = {
             name: '',
             biography: '',
+            artist_image: ''
         }
 
         this.onChangeName = this.onChangeName.bind(this)
         this.onChangeBiography = this.onChangeBiography.bind(this)
-        //this.onChangeArtistImage = this.onChangeArtistImage.bind(this)
+        this.onChangeArtistImage = this.onChangeArtistImage.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
     }
 
     onChangeName(e) {
@@ -27,13 +29,11 @@ class CreateArtist extends React.Component {
         })
     }
 
-    // onChangeArtistImage(e) {
-    //     this.setState({
-    //         artist_image: e.target.value
-    //     })
-    //     console.log('picture selected!')
-    // }
-
+    onChangeArtistImage(e) {
+        this.setState({
+            artist_image: e.target.value
+        })
+    }
 
     onSubmit = (e) => {
         e.preventDefault();
@@ -43,21 +43,21 @@ class CreateArtist extends React.Component {
         const newArtist = {
             name: this.state.name,
             biography: this.state.biography,
+            artist_image: this.state.artist_image
         }
 
-        fetch('/api/artists/', {
-            headers: { "Content-Type": "application/json"},
-            body: JSON.stringify(newArtist),
-            method: "POST"
-        })
-
-            //Axios.post("api/artists/", newArtist)
-            // .then(res => console.log(res.data))
+        fetch('api/artists/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(newArtist)
+        }).then(res => res.json())
+        
 
         this.setState({
             name: '',
             biography: '',
-        })
+            artist_image: ''
+        });
 
         this.props.history.push('/artists');
     }
@@ -76,18 +76,33 @@ class CreateArtist extends React.Component {
                     </div>
                 </section>
 
-                <form onSubmit={this.onSubmit}>
-                    <input type="text" value={this.state.name}
-                        onChange={this.onChangeName} placeholder="Enter Name" />
+                <form onSubmit={this.onSubmit} id="myForm" name="myForm">
+                    <label htmlFor="name">Enter Name:</label>
+                    <input type="text" 
+                    id="name" 
+                    value={this.state.name}
+                    onChange={this.onChangeName} 
+                    placeholder="Enter Name" />
 
                     <br />
                     <br />
-                    <input type="text" value={this.state.biography}
-                        onChange={this.onChangeBiography} placeholder="Enter bio" />
+                    <label htmlFor="biography">Enter biography:</label>
+                    <input type="text" 
+                    id="biography" 
+                    value={this.state.biography}
+                    onChange={this.onChangeBiography} 
+                    placeholder="Enter bio" />
                     <br />
                     <br />
 
-                    <input type="submit" name="submit" value="submit" />
+                    <label htmlFor="artist_image">Enter URL:</label>
+                    <input type="text" 
+                    id="image" 
+                    value={this.state.artist_image}
+                    onChange={this.onChangeArtistImage} 
+                    placeholder="Enter URL" />
+
+                    <input type="submit" value="submit" />
                 </form>
 
 
@@ -99,7 +114,50 @@ class CreateArtist extends React.Component {
 
 export default CreateArtist;
 
+
+// function uploadFile(file) {
+    //     fetch('api/artists/', {
+    //         body: file,
+    //         method: 'POST'
+    //     })
+    //     .then(response => response.json())
+    //     .then(success => {
+    //         console.log("Success:", success)
+    //     })
+    //     .catch(error => console.log(error))
+    // }
+    
+
+        // const fileInput = document.querySelector('artist_image')
+        // const formData = new FormData();
+
+        // formData.append('artist_image', fileInput.files[0])
+
+        // const options = {
+        //     method: 'POST',
+        //     body: formData,
+        // };
+
+        // fetch('api/artists', options)
+
+        // const formData = new FormData()
+        // const fileField = document.querySelector('input[type="file"]');
+
+        
+
+        // try {
+        //     const response = await fetch('api/artists/', {
+        //         method: 'POST',
+        //         body: formData
+        //     });
+        //     const result = await response.json();
+        //     console.log("Success:", JSON.stringify(result));
+        // } catch (error) {
+        //     console.error("Error:", error)
+        // }
+
 // console.log('Form test!')
+
 
 //         const formData = new FormData();
 //         const fileField = document.querySelector('input[type="file"]');
