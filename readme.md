@@ -1,6 +1,9 @@
+<img width="1630" alt="Screen Shot 2019-10-11 at 4 24 03 PM" src="https://user-images.githubusercontent.com/52870407/66693392-6cf80380-ec76-11e9-86f0-d28cf9b7ade7.png">
+
+
 **Fiaworld Media Productions**
 
-FiaWorld is a gospel media production company in Atlanta, Georgia.
+FiaWorld is a gospel media production company in Atlanta, Georgia. They have been serving the Atlanta community in music as well as, video broadcasting and production since 1993. They have several subdairies that represents the service offerings from FIA Corporation. 
 
 ---
 
@@ -11,16 +14,21 @@ FiaWorld is a gospel media production company in Atlanta, Georgia.
 * SQL
 * Bulma
 * React.Js
+* React-Bootstrap
 
 ---
 
 **Future Plans Moving Forward**
 
+* Work with ImageField in Django and make fetch function for both images and text
+
+* Have Login Modal function properly
+
 ---
 
 **Deployed Application**
 
-You can view my application via Heroku [**here**](https://fast-thicket-23413.herokuapp.com/).
+You can view my application via Heroku [**here**](https://fierce-mountain-28176.herokuapp.com/).
 
 ---
 
