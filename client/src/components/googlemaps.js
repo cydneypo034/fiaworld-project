@@ -7,8 +7,7 @@ const style = {
         height: '50%'
     } 
 export class MapContainer extends React.Component {
-    
-    
+
   render() {
     return (
         
@@ -19,7 +18,6 @@ export class MapContainer extends React.Component {
       zoom={14}
       >
 
- 
         <Marker onClick={this.onMarkerClick}
                 name={'Current location'} />
  
