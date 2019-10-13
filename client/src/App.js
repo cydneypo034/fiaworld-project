@@ -30,6 +30,7 @@ class App extends React.Component {
             <Route path="/contact" component={Contact} />
           </Switch>
           <Footer />
+          
         </Router>
       </React.Fragment>
     );

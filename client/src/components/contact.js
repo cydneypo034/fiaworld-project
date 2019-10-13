@@ -20,14 +20,14 @@ class Contact extends React.Component {
                     <div className="text-center">
                 
                 
-                <div className="contact-socials">
-            <Button variant="outline-light"><a href='https://www.facebook.com/FIA.Broadcast.Network?fref=ts'>Facebook </a></Button>
+                <div >
+            <Button variant="light" className="contact-socials" href='https://www.facebook.com/FIA.Broadcast.Network?fref=ts'>Facebook</Button>
                     
-                <Button variant= "outline-light"><a href="https://twitter.com/fbn99">Twitter </a></Button>
+                <Button variant= "light" className="contact-socials" href="https://twitter.com/fbn99">Twitter</Button>
                     
-                <Button variant="outline-light"><a href="https://www.linkedin.com/in/dr-solomon-pollard-jr-33888026/">LinkedIn</a></Button>
+                <Button variant="light" className="contact-socials" href="https://www.linkedin.com/in/dr-solomon-pollard-jr-33888026/">LinkedIn</Button>
 
-                <Button variant="outline-light"><a href="mailto: pollard@fiaworld.com">Email</a></Button>
+                <Button variant="light" className="contact-socials" href="mailto: pollard@fiaworld.com">Email</Button>
                 </div>
                     </div>
                     </div>
@@ -36,7 +36,6 @@ class Contact extends React.Component {
             <div className="google-map">
                 <GoogleMaps />
                 </div>
-                <br />
                 <br />
                 <br />
                 <br />
@@ -69,7 +68,7 @@ class Contact extends React.Component {
                             type="input" 
                             id="feedback-entry"
                             name="feedback-entry"
-                            placeholder="Your Email"
+                            placeholder="Your Name"
                             required/>
                         </div>
                         <br />
@@ -100,15 +99,10 @@ class Contact extends React.Component {
                         <button className="button is-dark">Submit</button>
                         </div>
                     </form>
+                    </div>
         </div>
-            <br />
+        <br />
 
-           
-              </div>
-
-
-         
-       
               </div>
             
         )
@@ -116,4 +110,7 @@ class Contact extends React.Component {
 
 }
 
+
+
 export default Contact;
+
