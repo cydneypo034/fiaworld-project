@@ -3,11 +3,11 @@
 
 # FIA Corporation
 
-FiaWorld is a gospel media production company in Atlanta, Georgia. They have been serving the Atlanta community in music as well as, video broadcasting and production since 1993. They have several subdairies that represents the service offerings from FIA Corporation which include music production, video and radio broadcasting and book writing and publishing. The corporation wanted an application that would be an update for their current website and showcased their extensive history of work over the years.
+FiaWorld is a gospel media production company in Atlanta, Georgia. They have been serving the Atlanta community in music as well as, video broadcasting and production since 1993. They have several subdairies that represents the service offerings from FIA Corporation which include music production, video and radio broadcasting and book writing and publishing. The corporation wanted an application that would be an update for their current website and showcased their extensive history of work over the years. 
 
 ---
 
-**Languages, Libraries and Frameworks Used**
+**Languages, Libraries, 3rd Party API's and Frameworks Used**
 
 * Django
 * Python
@@ -25,9 +25,11 @@ FiaWorld is a gospel media production company in Atlanta, Georgia. They have bee
 
 * Have Login Modal function properly
 
-* Add Spotify Music and Bible Verse Generator API
+* Have Delete AJAX request for artist work properly
 
-* Have Contact Form send emails
+* Add Spotify Music and a Bible Verse Generator API
+
+* Have Contact Form send emails using MailGun and EmailJS
 
 ---
 
@@ -38,6 +40,9 @@ You can view my application via Heroku [**here**](https://fierce-mountain-28176.
 ---
 
 **WireFrames**
+
+These wireframes were created using Adobe XD.
+
 ![fiaworld co](https://user-images.githubusercontent.com/52870407/66170325-d2624980-e611-11e9-8619-e76ad0629b57.png)
 ![Web 1920 – 2](https://user-images.githubusercontent.com/52870407/66170339-e4dc8300-e611-11e9-95ae-1d16a73cc31e.png)
 ![Web 1920 – 3](https://user-images.githubusercontent.com/52870407/66170352-eefe8180-e611-11e9-8668-f330d36489c5.png)
