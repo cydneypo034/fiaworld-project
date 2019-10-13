@@ -1,9 +1,9 @@
 <img width="1630" alt="Screen Shot 2019-10-11 at 4 24 03 PM" src="https://user-images.githubusercontent.com/52870407/66693392-6cf80380-ec76-11e9-86f0-d28cf9b7ade7.png">
 
 
-**Fiaworld Media Productions**
+# FIA Corporation
 
-FiaWorld is a gospel media production company in Atlanta, Georgia. They have been serving the Atlanta community in music as well as, video broadcasting and production since 1993. They have several subdairies that represents the service offerings from FIA Corporation. 
+FiaWorld is a gospel media production company in Atlanta, Georgia. They have been serving the Atlanta community in music as well as, video broadcasting and production since 1993. They have several subdairies that represents the service offerings from FIA Corporation which include music production, video and radio broadcasting and book writing and publishing. The corporation wanted an application that would be an update for their current website and showcased their extensive history of work over the years.
 
 ---
 
@@ -15,6 +15,7 @@ FiaWorld is a gospel media production company in Atlanta, Georgia. They have bee
 * Bulma
 * React.Js
 * React-Bootstrap
+* Google Maps API
 
 ---
 
@@ -58,8 +59,10 @@ This is the link to my Trello Project Board [**here**](https://trello.com/b/ymvB
 
 **FiaWorld ENTITY RELATIONSHIP DIAGRAM**
 
+This was created with draw.io
 
 
+<img width="617" alt="Screen Shot 2019-10-13 at 11 28 51 AM" src="https://user-images.githubusercontent.com/52870407/66717987-c2cec780-edac-11e9-9c29-c14da131d4c8.png">
 
 
 ---
