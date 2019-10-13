@@ -42,6 +42,10 @@ class Home extends React.Component {
             </section>
 
 
+            <div className="about-body">
+            
+            </div>
+
             <section>
             <div className="card-wrapper">
                 <div className="card has-background-dark">
@@ -58,7 +62,7 @@ class Home extends React.Component {
                 <img src={chynah} alt="chynah" className="artist-image2"/>
                 <br/>
                     <h3 className="about-text-card">Chynah Mari</h3>
-                    <p className="para-center">Chynah Mari is truly one of a kind. Her writing skilz are ahead of the rap game 
+                    <p className="para-center">Chynah Mari is truly one of a kind. Her writing skillz are ahead of the rap game 
                     and include her deeply profound spiritual enlightenment. High energy, a well known model, and spiritually in touch. </p>
 
                     <Button variant="outline-light">Book Here</Button>
@@ -77,6 +81,7 @@ class Home extends React.Component {
             </div>
             </section>
 
+            
             </div>
         )
     }

@@ -71,7 +71,7 @@ class CreateArtist extends React.Component {
                     <div className="hero-body">
                         <div className="container">
                             <h3 className="contact-text">Create New Artist</h3>
-                            <p className="para-center"> For a New Artist to be made, fill out the form below and
+                            <p className="subtitle has-text-centered"> For a New Artist to be made, fill out the form below and
                                 it will be added to the artist list!</p>
                         </div>
                     </div>

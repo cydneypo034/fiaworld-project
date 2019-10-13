@@ -15,7 +15,7 @@ class Contact extends React.Component {
                     <div className="container">
                     
             <h6 className="contact-text">Contact Us</h6>
-              <p className="para-center">If you are an aspiring artist, film producer needing sound production, or an
+              <p className="subtitle has-text-centered">If you are an aspiring artist, film producer needing sound production, or an
               aspiring talk show host, feel free to contact us through the contact form below.</p>
                     <div className="text-center">
                 
