@@ -24,6 +24,10 @@ FiaWorld is a gospel media production company in Atlanta, Georgia. They have bee
 
 * Have Login Modal function properly
 
+* Add Spotify Music and Bible Verse Generator API
+
+* Have Contact Form send emails
+
 ---
 
 **Deployed Application**
@@ -47,10 +51,14 @@ You can view my application via Heroku [**here**](https://fierce-mountain-28176.
 
 This is the link to my Trello Project Board [**here**](https://trello.com/b/ymvBsygl/fiaworld).
 
+<img width="1628" alt="Screen Shot 2019-10-12 at 7 24 52 PM" src="https://user-images.githubusercontent.com/52870407/66717703-0411a800-edaa-11e9-8c75-4f5c474aa40e.png">
+
 
 ---
 
 **FiaWorld ENTITY RELATIONSHIP DIAGRAM**
+
+
 
 
 
